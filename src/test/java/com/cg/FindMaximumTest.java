@@ -46,4 +46,22 @@ public class FindMaximumTest {
 		FindMaximum obj = new FindMaximum();
 		assertEquals((Double) 15.0, obj.maximumTest(10.0, 5.0, 15.0));
 	}
+	
+	@Test
+	public void testMaximumTestMethodString1() {
+		FindMaximum obj = new FindMaximum();
+		assertEquals((String) "Peach", obj.maximumTest("Peach", "Apple", "Banana"));
+	}
+
+	@Test
+	public void testMaximumTestMethodString2() {
+		FindMaximum obj = new FindMaximum();
+		assertEquals((String) "Peach", obj.maximumTest("Apple", "Peach", "Banana"));
+	}
+
+	@Test
+	public void testMaximumTestMethodString3() {
+		FindMaximum obj = new FindMaximum();
+		assertEquals((String) "Peach", obj.maximumTest("Apple", "Banana", "Peach"));
+	}
 }
