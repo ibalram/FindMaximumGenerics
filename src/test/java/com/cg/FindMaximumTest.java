@@ -13,55 +13,55 @@ public class FindMaximumTest {
 
 	@Test
 	public void testMaximumTestMethodInteger1() {
-		FindMaximum obj = new FindMaximum();
-		assertEquals((Integer) 15, obj.maximumTest(15, 10, 5));
+		FindMaximum obj = new FindMaximum<Integer>(15, 10, 5);
+		assertEquals((Integer) 15, obj.maximumTest());
 	}
 
 	@Test
 	public void testMaximumTestMethodInteger2() {
-		FindMaximum obj = new FindMaximum();
-		assertEquals((Integer) 15, obj.maximumTest(5, 15, 10));
+		FindMaximum obj = new FindMaximum<Integer>(5, 15, 10);
+		assertEquals((Integer) 15, obj.maximumTest());
 	}
 
 	@Test
 	public void testMaximumTestMethodInteger3() {
-		FindMaximum obj = new FindMaximum();
-		assertEquals((Integer) 15, obj.maximumTest(10, 5, 15));
+		FindMaximum obj = new FindMaximum<Integer>(10, 5, 15);
+		assertEquals((Integer) 15, obj.maximumTest());
 	}
 
 	@Test
 	public void testMaximumTestMethodDouble1() {
-		FindMaximum obj = new FindMaximum();
-		assertEquals((Double) 15.0, obj.maximumTest(15.0, 10.0, 5.0));
+		FindMaximum obj = new FindMaximum<Double>(15.0, 10.0, 5.0);
+		assertEquals((Double) 15.0, obj.maximumTest());
 	}
 
 	@Test
 	public void testMaximumTestMethodDouble2() {
-		FindMaximum obj = new FindMaximum();
-		assertEquals((Double) 15.0, obj.maximumTest(5.0, 15.0, 10.0));
+		FindMaximum obj = new FindMaximum<Double>(5.0, 15.0, 10.0);
+		assertEquals((Double) 15.0, obj.maximumTest());
 	}
 
 	@Test
 	public void testMaximumTestMethodDouble3() {
-		FindMaximum obj = new FindMaximum();
-		assertEquals((Double) 15.0, obj.maximumTest(10.0, 5.0, 15.0));
+		FindMaximum obj = new FindMaximum<Double>(10.0, 5.0, 15.0);
+		assertEquals((Double) 15.0, obj.maximumTest());
 	}
-	
+
 	@Test
 	public void testMaximumTestMethodString1() {
-		FindMaximum obj = new FindMaximum();
-		assertEquals((String) "Peach", obj.maximumTest("Peach", "Apple", "Banana"));
+		FindMaximum obj = new FindMaximum<String>("Peach", "Apple", "Banana");
+		assertEquals((String) "Peach", obj.maximumTest());
 	}
 
 	@Test
 	public void testMaximumTestMethodString2() {
-		FindMaximum obj = new FindMaximum();
-		assertEquals((String) "Peach", obj.maximumTest("Apple", "Peach", "Banana"));
+		FindMaximum obj = new FindMaximum<String>("Apple", "Peach", "Banana");
+		assertEquals((String) "Peach", obj.maximumTest());
 	}
 
 	@Test
 	public void testMaximumTestMethodString3() {
-		FindMaximum obj = new FindMaximum();
-		assertEquals((String) "Peach", obj.maximumTest("Apple", "Banana", "Peach"));
+		FindMaximum obj = new FindMaximum<String>("Apple", "Banana", "Peach");
+		assertEquals((String) "Peach", obj.maximumTest());
 	}
 }
