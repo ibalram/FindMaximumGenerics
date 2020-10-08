@@ -12,20 +12,38 @@ import static org.junit.Assert.*;
 public class FindMaximumTest {
 
 	@Test
-	public void testMaximumTestMethod1() {
+	public void testMaximumTestMethodInteger1() {
 		FindMaximum obj = new FindMaximum();
 		assertEquals((Integer) 15, obj.maximumTest(15, 10, 5));
 	}
 
 	@Test
-	public void testMaximumTestMethod2() {
+	public void testMaximumTestMethodInteger2() {
 		FindMaximum obj = new FindMaximum();
 		assertEquals((Integer) 15, obj.maximumTest(5, 15, 10));
 	}
 
 	@Test
-	public void testMaximumTestMethod3() {
+	public void testMaximumTestMethodInteger3() {
 		FindMaximum obj = new FindMaximum();
 		assertEquals((Integer) 15, obj.maximumTest(10, 5, 15));
+	}
+
+	@Test
+	public void testMaximumTestMethodDouble1() {
+		FindMaximum obj = new FindMaximum();
+		assertEquals((Double) 15.0, obj.maximumTest(15.0, 10.0, 5.0));
+	}
+
+	@Test
+	public void testMaximumTestMethodDouble2() {
+		FindMaximum obj = new FindMaximum();
+		assertEquals((Double) 15.0, obj.maximumTest(5.0, 15.0, 10.0));
+	}
+
+	@Test
+	public void testMaximumTestMethodDouble3() {
+		FindMaximum obj = new FindMaximum();
+		assertEquals((Double) 15.0, obj.maximumTest(10.0, 5.0, 15.0));
 	}
 }

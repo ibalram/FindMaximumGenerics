@@ -11,8 +11,19 @@ public class FindMaximum {
 		return max;
 	}
 
+	public static Double maximumTest(Double a, Double b, Double c) {
+		Double max = a;
+		if (b.compareTo(max) > 0)
+			max = b;
+		if (c.compareTo(max) > 0)
+			max = c;
+		return max;
+	}
+
 	public static void main(String[] args) {
-		Integer a = 5, b = 10, c = 15;
-		System.out.println(maximumTest(a, b, c));
+		Integer aInteger = 5, bInteger = 10, cInteger = 15;
+		Double aDouble = 5.0, bDouble = 10.0, cDouble = 15.0;
+		System.out.println(maximumTest(aInteger, bInteger, cInteger));
+		System.out.println(maximumTest(aDouble, bDouble, cDouble));
 	}
 }
